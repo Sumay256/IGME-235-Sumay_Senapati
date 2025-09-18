@@ -1,0 +1,7 @@
+/* Do everything in this file */
+h2
+{
+    border-bottom-style: solid;
+    border-bottom-color: red;
+    border-bottom-width: 1px;
+}
