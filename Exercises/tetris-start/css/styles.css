@@ -5,3 +5,8 @@ h2
     border-bottom-color: red;
     border-bottom-width: 1px;
 }
+div.tet
+{
+    float:right;
+    margin-left: 40%;
+}
