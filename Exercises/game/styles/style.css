@@ -1,0 +1,86 @@
+h1 {
+    color: red;
+    font-family: sans-serif;
+    border-bottom: 1px solid blue;
+}
+
+blockquote {
+    background-color: lightgray;
+    padding: 0.5rem;
+}
+
+img.thumbnail {
+    width: 200px;
+    display: block;
+    float: right;
+    margin: 0;
+}
+
+div.publishing {
+    background-color: #9E8576;
+}
+
+body {
+    background-color: #A499BE;
+    font-family : Verdana, sans-serif;
+}
+
+h2 {
+    color: navy;
+    margin-left: 50px;
+}   
+
+h1,
+h2 {
+    font-family: "Caesar Dressing", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #2A2E45
+}
+
+p {
+    margin-left: 100px;
+}
+
+ul {
+    padding-inline-start: 100px;
+}
+
+body {
+  background-color: #2A2E45; 
+  font-family: Verdana, sans-serif;
+  color: #000; 
+}
+
+header,
+main,
+footer {
+  border: 1px solid #7A542E;  
+  width: 80vw;                 
+  margin: 0 auto;             
+  padding: 2rem;               
+  background-color: #9E8576;   
+}
+
+div.publishing {
+  background-color: #A499BE;  
+  border: 1px solid #7A542E;   
+  margin-top: 1rem;
+}
+
+
+a:link {
+  color: #7A542E;  
+}
+
+a:visited {
+  color: #5A3D22;   
+}
+
+a:hover {
+  color: #A499BE;  
+}
+
+a:active {
+  color: #7A542E;  
+}
