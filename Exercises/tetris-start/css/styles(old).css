@@ -1,0 +1,32 @@
+/* Do everything in this file */
+h2
+{
+    border-bottom-style: solid;
+    border-bottom-color: red;
+    border-bottom-width: 1px;
+    clear: both;
+}
+
+figure {
+  float: right;
+  width: 40%;
+  margin-left: 1rem;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+#tetlist .tet {
+  float: left;
+  width: 30%;       
+  border: 1px solid black;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+footer {
+  clear: both;
+}
