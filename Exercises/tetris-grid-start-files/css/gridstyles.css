@@ -1,0 +1,46 @@
+/* It starts completely empty. I wish you luck. */
+body {
+    margin: 1rem;
+}
+
+#wrapper {
+    display: grid;
+    height: 95vh;
+    grid-template-areas:
+        "logo"
+        "menu"
+        "intro"
+        "playground"
+        "footer";
+}
+
+@media only screen and (min-width: 850px) {
+    #wrapper {
+        max-width: 1000px;
+        grid-template-areas:
+            "logo       intro"
+            "menu       menu"
+            "playground playground"
+            "footer     footer";
+    }
+}
+
+h1.game {
+    grid-area: logo;
+}
+
+ul.menu {
+    grid-area: menu;
+}
+
+#introduction {
+    grid-area: intro;
+}
+
+#tetgrid {
+    grid-area: playground;
+}
+
+footer {
+    grid-area: footer;
+}
