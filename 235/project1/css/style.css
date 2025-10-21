@@ -1,0 +1,136 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a1a;
+}
+
+/* Navbar */
+.site-header {
+  background-color: #121212;
+  width: 100vw;                     
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 0.75rem 3rem;
+}
+
+.tiny-nav ul {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.tiny-nav a {
+  color: #ddd;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.95rem;
+  padding: 0.35rem 0.5rem;
+  position: relative;
+  transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
+  border-radius: 4px;
+}
+
+.tiny-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 220ms ease;
+}
+
+.tiny-nav a:hover {
+  color: #fff;
+  background-color: rgba(255,255,255,0.05);
+  transform: scale(1.06);
+  outline: none;
+}
+
+.tiny-nav a:hover::after {
+  width: 100%;
+}
+
+/* Header */
+.intro-section {
+  margin-top: 1rem;     
+  padding-left: 3.5rem;    
+}
+
+.intro-section h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #f5f5f5;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #ffffff;
+  display: inline-block;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 0 2rem;
+}
+
+/* Text blocks */
+.text-block {
+  max-width: 750px;
+  text-align: left;
+  justify-content: center;
+}
+
+.text-block p {
+  color: #dcdcdc;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+
+
+/* Images */
+.image-grid {
+  width: 100vw; 
+  margin-left: calc(50% - 50vw);
+  background-color: #181818;
+  padding: 3rem 0 4rem;
+  text-align: center;
+}
+
+/* Large image */
+.image-grid .large img {
+  width: 64%;
+  max-width: 1200px;
+  background-color: #111;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+/* Small images */
+.image-grid .small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.image-grid .small img {
+  width: 26%;
+  max-width: 340px;
+  border-radius: 8px;
+  border: 2px solid #222;
+  background-color: #111;
+  transition: transform 0.25s ease;
+}
+
