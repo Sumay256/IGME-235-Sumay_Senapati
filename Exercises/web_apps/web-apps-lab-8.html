@@ -26,7 +26,7 @@
          .year of 1970 or earlier. Use Array.filter() on the cars array:
          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
         */
-        let classicCars = cars.filter(car => car.year <= 1970);
+        let classicCars = cars.filter(obj => { return obj.year <= 1970 });
 
         /*
          2 - Create a new array named 'sortedByYear' that contains the contents of the
@@ -35,7 +35,7 @@
          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
          
         */
-        let sortedByYear = cars.sort((a, b) => a.year - b.year);
+        let sortedByYear = cars.sort((a,b)=>a.year-b.year);
 
         /*
          3 - Create a new array named 'newerYearsOnly' that contains only the .year property 
@@ -53,10 +53,8 @@
          You could do this additional filter on a separate filter on the different lines,
          or as a "one-liner" by chaining the method calls.
         */
-        let newerYearsOnly = cars
-            .map(car => car.year >= 2010 ? car.year : undefined)
-            .filter(year => typeof year === "number");
-
+        let newerYearsOnly = cars.map(obj=>{if(obj.year>=2010)return obj.year})
+        .filter(year=>{return Number.isInteger(year)});
         debugger;
     </script>
 </body>
