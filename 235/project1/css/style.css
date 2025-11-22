@@ -60,7 +60,7 @@ body {
 
 /* Header */
 .intro-section {
-  margin-top: 1rem;     
+  margin-top: 3rem;     
   padding-left: 3.5rem;    
 }
 
@@ -137,3 +137,124 @@ body {
   transition: transform 0.25s ease;
 }
 
+/* Footer */
+.site-footer {
+  background-color: #121212;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+  border-top: 1px solid #2a2a2a;
+}
+
+.footer-content {
+  color: #dcdcdc;
+  text-align: left;
+  padding-left: 3.5rem;   
+  padding-right: 3.5rem;
+  line-height: 1.4;
+  font-size: 0.95rem;
+  max-width: 900px;
+}
+
+.footer-content h2 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.04em;
+  font-size: 1.1rem;
+}
+
+.footer-content p {
+  margin: 0;
+  color: #dcdcdc;
+}
+
+.footer-content a {
+  color: #ddd;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+.footer-content a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+  /* Navbar */
+  .site-header {
+    padding: 0.75rem 1rem;
+  }
+
+  .tiny-nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .tiny-nav a {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  /* Intro section */
+  .intro-section {
+    padding-left: 1.25rem;
+    margin-top: 5rem; 
+  }
+
+  .intro-section h1 {
+    font-size: 1.5rem;
+    border-bottom-width: 1px;
+  }
+
+  /* Text blocks */
+  .text-block {
+    padding: 0 1.25rem;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .text-block h2 {
+    font-size: 1.1rem;
+  }
+
+  .text-block p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* Image grid */
+  .image-grid {
+    padding: 2rem 0 3rem;
+    text-align: left;
+  }
+
+  .image-grid .large img {
+    width: 92%;
+    margin-left: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .image-grid .small {
+    padding-left: 3.5rem;
+  }
+}
+
+ 

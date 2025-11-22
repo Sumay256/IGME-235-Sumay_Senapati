@@ -2,87 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-    <header class="site-header">
-        <nav class="tiny-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <nav class="tiny-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="intro-section">
-        <h1>A Portfolio Piece</h1>
+  <section class="intro-section" id="home">
+    <h1>A Portfolio Piece</h1>
+  </section>
+
+  <main class="main-content">
+
+    <section class="text-block" id="about">
+      <h2>About Me</h2>
+      <p>
+        Welcome! This portfolio highlights a selection of works that combine design, functionality, and experimentation.
+        It reflects an approach focused on building engaging, user-centered experiences while maintaining attention to
+        structure and detail. The goal is to continue growing through creative challenges, technical exploration, and
+        collaborative projects.
+      </p>
+      <h2>Project Overview</h2>
+      <p>
+        Below is a selection of featured work, ranging from interactive prototypes to full development pieces. Each
+        project focuses on different aspects of design and implementation — whether that's visual layout, motion, or
+        user interaction. Together, they represent a range of concepts, workflows, and ideas explored across multiple
+        mediums.
+      </p>
     </section>
 
-    <main class="main-content">
+    <section class="image-grid" id="gallery">
+      <div class="large">
+        <img src="media/Bonfire.png" alt="Bonfire" />
+      </div>
 
-        <section class="text-block">
-            <h2>About Me</h2>
-            <p>
-                Welcome! This portfolio highlights a selection of works that combine design, functionality, and
-                experimentation.
-                It reflects an approach focused on building engaging, user-centered experiences while maintaining
-                attention to structure and detail.
-                The goal is to continue growing through creative challenges, technical exploration, and collaborative
-                projects.
-            </p>
-            <h2>Project Overview</h2>
-            <p>
-                Below is a selection of featured work, ranging from interactive prototypes to full development pieces.
-                Each project focuses on different aspects of design and implementation — whether that's visual layout,
-                motion, or user interaction.
-                Together, they represent a range of concepts, workflows, and ideas explored across multiple mediums.
-            </p>
-        </section>
+      <div class="small">
+        <img src="media/TRex.png" alt="Trex" />
+        <img src="media/Spooderman.png" alt="Spooderman" />
+        <img src="media/Wheretheyat.png" alt="Wheretheyat" />
+      </div>
+    </section>
 
-        <section class="image-grid">
-            <div class="large">
-                <img src="media/Bonfire.png" alt="Bonfire" />
-            </div>
+    <section class="text-block">
+      <p>
+        Above is a collection of micellanious works that showcase different styles and techniques. While they are plenty more projects I'd love to showcase,
+        these have been specifically picked as they show my progress and growth as a designer and developer in a chronological order.
+        Starting from the T-Rex game recreation, my intial foray into game developmnent started of as a collection of various short projects and recreations fo various existing games with this one in particular
+        being my first big milestone as it helped me learn responsive design to accomodate all form of screens and devices as well as basic side scroller mechanics.
+        Then I moved onto creating some more projects which led me to "Spooderman" a dumb and funny side scroller I decided to make to experiment with some mechanics I had in mind
+        which ended up testing all my skills I had developed over that time. After several more smaller projects, I developed a game in monogame called "Where They At",
+        one of my first projects made in collaboration with others. It was a fun and intricate projects where algorithms for the game puzzles and systems were key 
+        and I learned a lot about teamwork and project management. Finally, the Bonfire project is my latest work where I experimented with 3D design.
+      </p>
+    </section>
+  </main>
 
-            <div class="small">
-                <img src="media/TRex.png" alt="Trex" />
-                <img src="media/Spooderman.png" alt="Spooderman" />
-                <img src="media/Wheretheyat.png" alt="Wheretheyat" />
-            </div>
-        </section>
 
-        <section class="text-block">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, sunt labore consequatur a nam, amet
-                quibusdam sed officia quas quasi quam iste tempora commodi modi porro aliquam aperiam quod maiores!
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos deleniti labore molestias incidunt
-                impedit nam veritatis? Enim aliquam explicabo eligendi nisi veniam? Tempore, dolor suscipit repellendus
-                at aspernatur similique soluta.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ut corporis, hic dignissimos nihil
-                neque repellendus numquam culpa quis dolores ipsa, magnam ad delectus eveniet sequi! Quasi quibusdam
-                commodi dicta.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eveniet reprehenderit dolor numquam quia
-                rem, tenetur error dicta asperiores nam pariatur dignissimos quisquam labore obcaecati placeat sunt
-                doloremque. Beatae, fuga?
-            </p>
-        </section>
-        <section id="contact" class="text-block">
-            <h2>Get In Touch</h2>
-            <p>For inquiries, collaborations, or portfolio requests, please reach out through one of the following:</p>
-            <ul>
-                <li>Email: <a href="#">email@example.com</a></li>
-                <li>Portfolio: <a href="#">portfolio-link.com</a></li>
-                <li>LinkedIn: <a href="#">linkedin.com/in/username</a></li>
-            </ul>
-        </section>
-    </main>
+
 </body>
-
+  <footer class="site-footer" id="contact">
+    <div class="footer-content">
+      <h2>Get In Touch</h2>
+      <p>
+        For inquiries, collaborations, or portfolio requests, please reach out through one of the following:
+        <ul>
+          <li>Email: <a href="#">email@example.com</a></li>
+          <li>Portfolio: <a href="#">portfolio-link.com</a></li>
+          <li>LinkedIn: <a href="#">linkedin.com/in/username</a></li>
+        </ul>
+      </p>
+    </div>
+  </footer>
 </html>

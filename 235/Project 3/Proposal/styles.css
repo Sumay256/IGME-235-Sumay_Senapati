@@ -1,0 +1,111 @@
+:root {
+  --accent-red: #e60026;
+  --text-dark: #f2f2f2;
+  --bg-dark: #2a2a2a;
+  --card-dark: #3a3a3a;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-dark);
+  color: var(--text-dark);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--card-dark);
+  border-bottom: 4px solid var(--accent-red);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  color: var(--accent-red);
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Main Content */
+/* Fade-in animation for all sections */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.section {
+  background: var(--card-dark);
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border-left: 6px solid var(--accent-red);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  animation: fadeSlideIn 0.7s ease both;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55);
+}
+
+.section h2 {
+  margin-top: 0;
+  color: var(--accent-red);
+  font-size: 1.8rem;
+}
+
+.section ul {
+  padding-left: 20px;
+}
+
+/* Mockups */
+.mockup-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* exactly two mockups */
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.mockup {
+  width: 100%;
+  border-radius: 6px;
+  border: 3px solid var(--accent-red);
+  background: #555;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.mockup:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2.2rem;
+  }
+  .section h2 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Web Apps-1</title>
+  <script>
+    "use strict";
+    // 1) Common JS Objects
+    let colors = ["red", "green", "blue"]; // Array literal
+    let person = { name: "Fred", age: 20 };   // Object literal
+    let month = new Date().getMonth();
+    let age = Math.round(20.999);
+    let age2 = Math.floor(20.999);
+
+    // add your new code here.
+    colors.push("cyan");
+
+    console.log("Last color:", colors[colors.length - 1]);
+
+    for (let i = 0; i < colors.length; i++) {
+      console.log("Color " + i + ": " + colors[i]);
+    }
+
+    person.school = "RIT";
+    console.log("School: " + person.school);
+
+    let secondsSince1970 = Date.now() / 1000;
+    console.log("Seconds since Jan 1, 1970: " + secondsSince1970);
+
+    console.log("Value of PI:", Math.PI);
+
+    console.log("Absolute value of -999:", Math.abs(-999));
+
+    let greeting = "Hello";
+    console.log("Uppercase greeting:", greeting.toUpperCase());
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Phrases</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <img src="media/lbsunshine.jpg" alt="Background" id="background-image">
+
+    <header>
+        <h1>Random Phrases</h1>
+    </header>
+
+    <main>
+        <div id="phrase-box"></div>
+        <button id="new-phrase">Show New Phrase</button>
+    </main>
+
+    <footer>
+        <p>Created by Sumay Senapati</p>
+    </footer>
+
+    <script>
+        const phrases = [
+            "Keep moving forward.",
+            "Dream big, work hard.",
+            "Every day is a new chance.",
+            "Stay positive and strong.",
+            "You can do great things."
+        ];
+
+        function displayQuote() {
+            const randomIndex = Math.floor(Math.random() * phrases.length);
+            document.getElementById("phrase-box").textContent = phrases[randomIndex];
+        }
+
+        document.getElementById("new-phrase").addEventListener("click", displayQuote);
+        window.onload = displayQuote;
+    </script>
+</body>
+
+</html>
