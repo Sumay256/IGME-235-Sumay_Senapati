@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 18px;
+  background: #f7f7f8;
+  color: #222;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto 18px;
+}
+
+h1, h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+input[type="text"],
+select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 0.95rem;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #0078d7;
+  color: white;
+  cursor: pointer;
+  font-size: 0.93rem;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #006ac1;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+  min-height: 28px;
+  color: #333;
+}
+
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.small-note {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  margin-top: 6px;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  margin-top: 10px;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.card button {
+  margin-top: 6px;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+/*responsive adjustments */
+@media (max-width: 560px) {
+  .controls {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+}

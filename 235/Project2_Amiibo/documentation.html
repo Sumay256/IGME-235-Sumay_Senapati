@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Amiibo Finder - Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background: #f7f7f8;
+            color: #222;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #0078d7;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+        }
+
+        ul {
+            margin: 10px 0 10px 20px;
+        }
+
+        code {
+            background: #eaeaea;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Amiibo Finder Documentation</h1>
+
+    <section>
+        <h2>Overview</h2>
+        <p>
+            The Amiibo Finder is a web application that allows users to search for Amiibo figures, filter by game
+            series, sort by name, and maintain a list of favourites. The application stores the last search term,
+            selected filter, and sort option using the browser's local storage, providing a persistent and user-friendly
+            experience.
+        </p>
+    </section>
+
+    <section>
+        <h2>Initial Build vs Final Rework</h2>
+        <p>The initial build was a simple search interface similar to the GIF Finder project. The major reworks include:
+        </p>
+        <ul>
+            <li><strong>Filter and sort functionality:</strong> Added dropdowns for game series and sorting by name
+                (A→Z, Z→A).</li>
+            <li><strong>Favourites feature:</strong> Users can add or remove Amiibo to a favourites section. IDs are
+                stored in localStorage for persistence.</li>
+            <li><strong>Persistent last search:</strong> The search term, filter, and sort selection are saved between
+                visits.</li>
+            <li><strong>Empty search handling:</strong> Unlike the initial build, users can perform searches using only
+                filters without entering a search term.</li>
+            <li><strong>Status messages:</strong> Added live feedback for search progress, number of results found, and
+                error handling.</li>
+        </ul>
+        <p>These reworks were necessary to align with assignment requirements, including minimum three controls,
+            persistent state, and a responsive, user-friendly interface.</p>
+    </section>
+
+    <section>
+        <h2>Challenges Encountered</h2>
+        <ul>
+            <li>Understanding the structure of the Amiibo API and how to use head and tail fields to create unique IDs
+                for favourites.</li>
+            <li>Implementing search, filter, and sort in a way that could handle empty searches and persist user
+                selections without using advanced JS constructs.</li>
+            <li>Ensuring the UI was clean and responsive using Flexbox and CSS Grid while keeping it simple and
+                assignment-friendly.</li>
+            <li>Managing localStorage for multiple pieces of data (favourites, search term, filter, sort) and ensuring
+                proper updates when the user interacts with the app.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Project Process & References</h2>
+        <p>The project was developed in several stages to meet the assignment requirements:</p>
+        <ol>
+            <li><strong>Initial Setup:</strong> Created a basic HTML layout with search input, results grid, and
+                favourites section. This mimicked the starter template provided in class.</li>
+            <li><strong>API Integration:</strong> Explored the Amiibo API documentation to understand endpoints and data
+                structure, including fields like name, gameSeries, image,
+                head, and tail.</li>
+            <li><strong>Search Functionality:</strong> Implemented name-based search using the API. Initially, searches
+                required a term, but this was later improved to allow filter-only searches.</li>
+            <li><strong>Filter and Sort:</strong> Added dropdowns for game series filtering and sorting by name (A→Z,
+                Z→A), with persistent state using localStorage.</li>
+            <li><strong>Favourites:</strong> Enabled users to add or remove Amiibo from favourites, saved in
+                localStorage for persistence across visits.</li>
+            <li><strong>Refinement:</strong> Added status messages, empty search handling, and responsive CSS layout
+                with Flexbox and Grid to improve UX and match rubric requirements.</li>
+        </ol>
+        <p><strong>References & Resources Used:</strong></p>
+        <ul>
+            <li><a href="https://amiiboapi.com/docs/" target="_blank">Amiibo API Documentation</a> - Primary reference
+                for API endpoints, query parameters, and data structure.</li>
+            <li>Class Videos & Web Apps Tutorials - Guidance on search handling, localStorage, DOM manipulation, and
+                assignment-specific requirements.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Conclusion</h2>
+        <p>
+            The final Amiibo Finder project demonstrates an improved, interactive user interface with persistent state,
+            favourites management, and flexible search capabilities. The project was simplified enough to align with
+            class expectations while still implementing key features using the API efficiently. This project highlights
+            the importance of API documentation and careful planning in building feature-rich web applications.
+        </p>
+    </section>
+</body>
+
+</html>

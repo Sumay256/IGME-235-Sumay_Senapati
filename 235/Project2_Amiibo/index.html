@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Amiibo Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Amiibo Finder</h1>
+
+    <div class="controls" role="region" aria-label="Search and filters">
+      <label for="search-input" class="sr-only">Search amiibo</label>
+      <input id="search-input" type="text" placeholder="Search Amiibo by name..." title="Type a character or amiibo name (saved between visits)" />
+
+      <select id="filter" title="Filter results by game series (options loaded from API)">
+        <option value="">-- All Game Series --</option>
+      </select>
+
+      <select id="sort" title="Sort results">
+        <option value="">-- Sort --</option>
+        <option value="name-asc">Name (A → Z)</option>
+        <option value="name-desc">Name (Z → A)</option>
+      </select>
+
+      <button id="search-btn" title="Click to search">Search</button>
+      <button id="show-all-btn" title="Show all amiibo (no search)">Show All</button>
+    </div>
+
+    <div class="status" id="status" aria-live="polite" role="status">
+    </div>
+
+    <div class="small-note">Tip: your <strong>last search term</strong>, filter and sort are saved between visits.</div>
+  </header>
+
+  <main>
+    <section id="results-section" aria-labelledby="results-heading">
+      <h2 id="results-heading">Results</h2>
+      <div id="results-grid" class="grid" aria-live="polite"></div>
+    </section>
+
+    <section id="favourites-section" aria-labelledby="fav-heading" style="margin-top:20px;">
+      <h2 id="fav-heading">Favourites</h2>
+      <div id="favourites-grid" class="grid">
+        <p>No favourites yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
