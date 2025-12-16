@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Deckflip Dungeon - Documentation</title>
+
+</head>
+
+<body>
+    <h1>Deckflip Dungeon - Documentation</h1>
+
+    <section>
+        <h2>Game Overview</h2>
+        <p>
+            Deckflip Dungeon is a simple card matching game with RPG elements.
+            Players flip cards to reveal matches and progress through levels while managing health (HP) and shields.
+        </p>
+    </section>
+
+    <section>
+        <h2>Controls</h2>
+        <p>Click the "Start Game" button to begin.</p>
+        <p>Click on cards to reveal them and then click on a second card to attempt a match.</p>
+        <p>If a match is made, the cards are cleared and if the cards are a special type their effects are applied.</p>
+        <p>If no match is made, the cards are flipped back over and if either of the cards was an enemy, damage is
+            applied.</p>
+
+    </section>
+
+    <section>
+        <h2>Game Mechanics</h2>
+        <ul>
+            <li>HP: Health points; increases when HP cards are matched. Max HP is also increased by 5 permanently each
+                match.</li>
+            <li>Shield: Negates complete damage from enemy cards; consumes 1 shield per dmg negation. Gives a permanent
+                Dmg reduction stack (10%) Has a max stack limit of 5.</li>
+            <li>Enemies: Grunt and Brute cards deal damage when mismatched. (Grunt deals 2 flat damage and Brute deals 5)</li>
+            <li>Levels: Completing all matches advances the player to the next level, increasing
+                enemy damage.</li>
+            <li>Buffs: Temporary notifications for HP or Shield gains appear above the grid.</li>
+            <li>Inert number cards just have to be matched to clear them from the board.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Development Notes</h2>
+        <ul>
+            <li>Cards are created dynamically using the DOM, which allows the grid to change every level.</li>
+            <li>The HP bar is implemented using a simple inner div. Its width updates based on the player's current HP.</li>
+            <li>Buffs like "HP+" and "Shield+" appear temporarily above the grid whenever the player gains a bonus.
+                These are added dynamically to the DOM as well.</li>
+            <li>Used setTimeout to delay actions like hiding matched cards or flipping back mismatched cards. This
+                creates a smooth visual effect and prevents the player from clicking too quickly.</li>
+            <li>The deck includes special cards (HP, Shield, enemies) and inert number cards, which are shuffled
+                randomly each level to keep the game fresh. The deck is created and shuffled each level.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Audio</h2>
+        <p>A flip sound effect plays whenever a card is flipped. Sourced from PixaBay</p>
+    </section>
+</body>
+
+</html>

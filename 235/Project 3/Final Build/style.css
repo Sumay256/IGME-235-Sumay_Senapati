@@ -1,0 +1,93 @@
+body {
+    background: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.screen {
+    padding: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;   
+    font-size: 18px;      
+    border: 1px solid black;
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b11;   /* Darker on hover (Removed scaling to go with the dungeon theme) */
+}
+
+
+#ui {
+    margin-bottom: 20px;
+}
+
+#hpBar {
+    width: 200px;
+    height: 22px;
+    background: darkred;
+    margin: 0 auto 8px auto;
+    overflow: hidden;
+}
+
+#hpFill {
+    height: 100%;
+    width: 100%;
+    background: green;          
+    transition: width 0.2s;   
+}
+
+
+#buffs {
+    margin: 10px auto;
+    min-height: 24px;
+}
+
+.buff {
+    display: inline-block;
+    background: darkgray;
+    color: white;
+    padding: 3px 8px;
+    margin: 3px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#grid {
+    width: 380px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.card {
+    background: darkslategray;
+    color: white;
+    height: 80px;
+    font-size: 22px;
+    line-height: 80px;
+    cursor: pointer;
+    transition: transform .2s;
+    transition: background .2s;
+}
+
+.card.revealed {
+    background: red;
+}
+
+.card.matched {
+    background: green;
+    cursor: default;
+}
